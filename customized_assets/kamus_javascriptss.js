@@ -1,0 +1,12 @@
+$(window).scroll(function(){
+	if($(document).scrollTop()>50){
+		$('.navbar').addClass('shrink');
+	}else{
+		$('.navbar').removeClass('shrink');
+	}
+});
+$(function(){
+	$('#ChangeToggle').click(function(){
+		$('#navbar-hamburger').toggleClass('hidden');
+		$('#navbar-close').toggleClass('hidden');});
+});
